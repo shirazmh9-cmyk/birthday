@@ -1,0 +1,28 @@
+let hits = 0;
+
+const creeper = document.getElementById("creeper");
+const gameScreen = document.getElementById("gameScreen");
+const flashScreen = document.getElementById("flashScreen");
+const birthdayScreen = document.getElementById("birthdayScreen");
+
+creeper.addEventListener("click", () => {
+  hits++;
+
+  if (hits === 3) {
+    explode();
+  }
+});
+
+function explode() {
+  // Hide Creeper screen
+  gameScreen.style.display = "none";
+
+  // Show white flash
+  flashScreen.style.display = "block";
+
+  // After 2 seconds, hide flash and show birthday screen
+  setTimeout(() => {
+    flashScreen.style.display = "none";
+    birthdayScreen.style.display = "flex";
+  }, 2000);
+}

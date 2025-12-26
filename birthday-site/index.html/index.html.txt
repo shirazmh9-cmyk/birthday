@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FIRST SCREEN -->
+<div id="gameScreen">
+  <img id="creeper" src="images/creeper.png" alt="Creeper">
+  <p id="instruction">Kill the creeper before it explodes</p>
+</div>
+
+<!-- FLASH SCREEN -->
+<div id="flashScreen">
+  <img src="images/white.png">
+</div>
+
+<!-- BIRTHDAY SCREEN -->
+<div id="birthdayScreen">
+  <div class="left">
+    <img src="images/tree_bear.png">
+    <img src="images/christmas_tree.png">
+  </div>
+
+  <div class="right">
+    <img id="bee" src="images/bee.png">
+    <h1>Happy Birthday Luv</h1>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

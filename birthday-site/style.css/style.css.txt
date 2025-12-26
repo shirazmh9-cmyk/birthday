@@ -1,0 +1,53 @@
+/* GENERAL STYLING */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f3ea; /* creamy white */
+  text-align: center;
+}
+
+/* HIDE FLASH AND BIRTHDAY SCREEN BY DEFAULT */
+#flashScreen,
+#birthdayScreen {
+  display: none;
+}
+
+/* CREEPER */
+#creeper {
+  width: 200px;
+  cursor: pointer;
+}
+
+#instruction {
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* BIRTHDAY SCREEN LAYOUT */
+#birthdayScreen {
+  display: flex;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex-direction: column;
+}
+
+/* BEE IMAGE */
+#bee {
+  width: 60px;
+}
+
+/* OPTIONAL: CHRISTMAS TREE SIZE */
+.left img:last-child {
+  width: 80px;
+  margin-left: 10px;
+}
